@@ -1,3 +1,6 @@
+import src.main.kotlin.lectio.Topic
+import src.main.kotlin.lectio.Study
+
 fun main() {
     val numbers = Topic(key = "numbers", title = "Numbers")
 
