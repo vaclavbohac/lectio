@@ -1,8 +1,8 @@
-package src.test.kotlin.lectio
+package src.test.kotlin.com.vaclavbohac.lectio.model.lectio
 
+import com.vaclavbohac.lectio.model.lectio.Study
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
-import src.main.kotlin.lectio.Study
 import src.main.kotlin.lectio.exceptions.StudyAlreadyPublishedException
 import src.main.kotlin.lectio.exceptions.StudyAlreadyUnpublishedException
 

@@ -1,4 +1,4 @@
-package src.main.kotlin.lectio
+package com.vaclavbohac.lectio.model.lectio
 
 import src.main.kotlin.lectio.exceptions.StudyAlreadyPublishedException
 import src.main.kotlin.lectio.exceptions.StudyAlreadyUnpublishedException

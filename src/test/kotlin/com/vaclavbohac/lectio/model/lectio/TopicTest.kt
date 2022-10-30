@@ -1,9 +1,9 @@
-package src.test.kotlin.lectio
+package src.test.kotlin.com.vaclavbohac.lectio.model.lectio
 
+import com.vaclavbohac.lectio.model.lectio.Study
+import com.vaclavbohac.lectio.model.lectio.Topic
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
-import src.main.kotlin.lectio.Topic
-import src.main.kotlin.lectio.Study
 
 internal class TopicTest {
     @Test

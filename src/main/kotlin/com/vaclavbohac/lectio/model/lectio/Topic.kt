@@ -1,4 +1,4 @@
-package src.main.kotlin.lectio
+package com.vaclavbohac.lectio.model.lectio
 
 data class Topic(val key: String, val title: String, val studies: MutableList<Study> = mutableListOf()) {
     fun assignStudy(study: Study) {
