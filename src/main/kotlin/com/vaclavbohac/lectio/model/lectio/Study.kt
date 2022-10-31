@@ -3,7 +3,7 @@ package com.vaclavbohac.lectio.model.lectio
 import src.main.kotlin.lectio.exceptions.StudyAlreadyPublishedException
 import src.main.kotlin.lectio.exceptions.StudyAlreadyUnpublishedException
 
-data class Study(val title: String, val content: String, var isPublished: Boolean = false) {
+data class Study(val title: String, val content: String, var videoUrl: String = "", var isPublished: Boolean = false) {
     fun publish() {
         if (isPublished) {
             throw StudyAlreadyPublishedException(title = title)
@@ -18,5 +18,9 @@ data class Study(val title: String, val content: String, var isPublished: Boolea
         }
 
         isPublished = false
+    }
+
+    fun hasVideo(): Boolean {
+        return videoUrl.isNotEmpty()
     }
 }

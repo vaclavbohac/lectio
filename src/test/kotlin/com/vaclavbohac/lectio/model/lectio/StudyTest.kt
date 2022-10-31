@@ -55,6 +55,20 @@ internal class StudyTest {
         assertEquals("Study 'Numbers' already unpublished", exception.message)
     }
 
+    @Test
+    fun studyDoesntHaveVideoByDefault() {
+        val s = subject()
+
+        assertEquals(false, s.hasVideo())
+    }
+
+    @Test
+    fun studyHasVideoIfVideoUrlIsSet() {
+        val s = Study("Numbers", "# Numbers", "https://example.com")
+
+        assertEquals(true, s.hasVideo())
+    }
+
     private fun subject(): Study {
         return Study("Numbers", "# Numbers")
     }
