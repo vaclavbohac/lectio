@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 @SpringBootApplication
 class LectioApplication {
     @RequestMapping("/")
-    fun home() = "Hello World!"
+    fun home() {}
 }
 
 fun main(args: Array<String>) {
