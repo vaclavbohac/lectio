@@ -2,14 +2,16 @@ package com.vaclavbohac.lectio
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.stereotype.Controller
+import org.springframework.web.bind.annotation.GetMapping
 
-@RestController
+@Controller
 @SpringBootApplication
 class LectioApplication {
-    @RequestMapping("/")
-    fun home() {}
+    @GetMapping("/")
+    fun dashboard(): String {
+        return "dashboard"
+    }
 }
 
 fun main(args: Array<String>) {
